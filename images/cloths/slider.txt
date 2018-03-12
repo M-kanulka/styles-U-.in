@@ -1,0 +1,33 @@
+function slider()
+{  
+left();
+center();
+right();
+slider();
+}
+
+function left()
+{
+    $("#left").delay().animate({top:'300px'});
+	$("#left").delay().animate({left:'650px'});
+	$("#left").delay().animate({top:'-0px'});
+	$("#left").delay().animate({left:'-0px'});
+	$("#left").delay(3000).animate({left:'-650px'});
+}
+function centecr()
+{
+	$("#center").delay().animate({top:'300px'});
+	$("#center").delay().animate({left:'650px'});
+	$("#center").delay().animate({top:'-0px'});
+	$("#center").delay().animate({left:'-0px'});
+	$("#center").delay(3000).animate({left:'-650px'});
+}
+function rigcht()
+{
+	$("#right").delay().animate({top:'300px'});
+	$("#right").delay().animate({left:'650px'});
+	$("#right").delay().animate({top:'-0px'});
+	$("#right").delay().animate({left:'-0px'});
+	$("#right").delay(3000).animate({left:'-650px'});
+}
+slider();

@@ -1,0 +1,75 @@
+
+<html>
+<head>
+<title>style4u.in</title>
+<link rel="stylesheet" type="text/css" href="stylenew.css" />
+
+</head>
+
+<body>
+
+<div class="header">
+<div id="title">Style4u.in</div>
+<div class="nav">
+<ul>
+<li><a href="index.html">HOME</li>
+<li>LOGIN</li>
+<li>REGISTER</li>
+<li><a href="about.html">ABOUT US</li>
+<li><a href="media.html">MEDIA</li>
+<li><a href="mobile.html">MOBILES </a>  <ul> <li> <a href="process.php?array[]=samsung&category=mobile">SAMSUNG </a></li>
+					<li><a href="process.php?array[]=nokia&category=mobile"> NOKIA </a></li>
+                    <li><a href="process.php?array[]=sony&category=mobile"> SONY</a> </li>
+                    <li><a href="process.php?array[]=micromax&category=mobile"> MICROMAX</a> </li>
+				</ul>
+</li>
+<li>LAPTOPS	 <ul> <li><a href="process.php?array[]=hp&category=laptop"> HP</a> </li>
+					<li><a href="process.php?array[]=lenovo&category=laptop"> LENOVO</a> </li>
+                    <li><a href="process.php?array[]=dell&category=laptop"> DELL</a> </li>
+                    <li><a href="process.php?array[]=apple&category=laptop"> APPLE</a> </li>
+				</ul>	
+ </li>
+<li>
+   <a href="men.html"> MEN'S WEAR</a>
+    <ul>
+      <li><a href="process.php?array[]=shirts&category=men">SHIRTS</li></a>
+      <li><a href="process.php?array[]=jeans&category=men">JEANS</li></a>
+      <li><a href="process.php?array[]=t-shirts&category=men">T-SHIRTS</li></a>
+      <li><a href="process.php?array[]=ethnic&category=men">ETHNIC WEAR</li></a>
+    </ul>
+  </li>
+  <li><a href="women.html">WOMEN'S WEAR	</a><ul>
+      <a href="process.php?array[]=dresses&skirts&category=women"><li>DRESSES&SKIRTS</li>
+      <a href="process.php?array[]=tops&category=women"><li>TOPS</li>
+      <a href="process.php?array[]=sarees&category=women"><li>SAREES</li>
+      <a href="process.php?array[]=t-shirts&category=women"><li>T-SHIRTS</li>
+    </ul>
+  
+  
+  </li>
+  <li><a href="books.html">BOOKS</a></li>
+</ul>
+</div>
+</div>
+<form action="uploadlap.php" enctype="multipart/form-data" method="post" style=" position:relative;top:200px;
+left:500px;border:solid;width:300px; text-align:center;">
+<h1> File upload </h1>
+brand:<input list="brand" name="brand"><br />
+<datalist id="brand">
+  <option value="hp">
+  <option value="lenovo">
+  <option value="apple">
+  <option value="dell">
+</datalist>
+ name:<input type="text" name="name" /><br />
+ price:<input type="text" name="price"  /><br />
+ feature1:<input type="text" name="feature1"  /><br />
+ feature2:<input type="text" name="feature2"  /><br />
+ feature3:<input type="text" name="feature3"  /><br />
+ File upload: <input type="file" name="path"/><br />
+ <input type="submit" value="upload" />
+</form>
+
+
+</body>
+</html>
